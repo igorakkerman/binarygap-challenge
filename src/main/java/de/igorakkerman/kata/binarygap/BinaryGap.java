@@ -2,7 +2,7 @@ package de.igorakkerman.kata.binarygap;
 
 class BinaryGap {
     public static int binaryGap(int n) {
-        char[] chars = Long.toBinaryString(n).toCharArray();
+        char[] chars = Integer.toBinaryString(n).toCharArray();
         int max = 0;
         int cur = 0;
         for (char aChar : chars) {
