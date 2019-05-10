@@ -5,8 +5,8 @@ class BinaryGap {
         char[] chars = Integer.toBinaryString(n).toCharArray();
         int max = 0;
         int cur = 0;
-        for (char aChar : chars) {
-            if (aChar == '0')
+        for (char c : chars) {
+            if (c == '0')
                 cur++;
             else {
                 max = Math.max(max, cur);
